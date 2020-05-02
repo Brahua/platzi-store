@@ -1,0 +1,5 @@
+<div class="product-grid">
+  <div *ngIf="products.length === 0"> No hay productos disponibles </div>
+  <app-product *ngFor="let product of products" (productClicked)="clickProduct($event)" [product]="product">
+  </app-product>
+</div>
